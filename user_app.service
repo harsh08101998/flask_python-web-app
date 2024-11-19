@@ -1,0 +1,20 @@
+[Unit]
+Description=Python Application
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/harsh/app_python/hh
+ExecStart=/usr/bin/python3 /home/harsh/app_python/hh/app.py
+Restart=always
+StandardOutput=append:/var/log/python_app.log
+StandardError=append:/var/log/python_app.log
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+#cd /etc/systemd/system/
+
