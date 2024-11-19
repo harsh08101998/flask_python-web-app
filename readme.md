@@ -23,3 +23,5 @@ cp user_app.service /etc/systemd/system/   #copy service file to systemd
 touch /var/log/python_app.log   # create log file
 systemctl daemon-reload
 systemctl start user_app.service
+
+<img width="1076" alt="Screenshot 2024-11-19 at 11 14 51 AM" src="https://github.com/user-attachments/assets/b7504d97-58de-424f-8070-5b2e091da1e7">
