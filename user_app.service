@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/home/harsh/app_python/hh
-ExecStart=/usr/bin/python3 /home/harsh/app_python/hh/app.py
+WorkingDirectory=/home/harsh/app_python/
+ExecStart=/usr/bin/python3 /home/harsh/app_python/app.py
 Restart=always
 StandardOutput=append:/var/log/python_app.log
 StandardError=append:/var/log/python_app.log
